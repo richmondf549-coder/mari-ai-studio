@@ -1,208 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <!-- Prevents awkward zooming when tapping the input on Android -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Mari AI</title>
-    <style>
-        :root {
-            /* Theme Variables */
-            --bg-color: #121212;
-            --surface-color: #1e1e1e;
-            --text-primary: #ffffff;
-            --accent-color: #007bff;
-            
-            /* Message Bubbles */
-            --user-msg-bg: #007bff;
-            --user-msg-text: #ffffff;
-            --ai-msg-bg: #2d2d2d;
-            --ai-msg-text: #e0e0e0;
-            --border-radius: 18px;
-            --input-bg: #2a2a2a;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mari AI</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0f14;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            display: flex;
-            flex-direction: column;
-            height: 100vh; /* Full viewport height */
-            overflow: hidden;
-        }
+    header {
+      padding: 18px;
+      background: #111821;
+      border-bottom: 1px solid #26313d;
+      text-align: center;
+    }
 
-        /* Header */
-        header {
-            background-color: var(--surface-color);
-            padding: 16px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            z-index: 10;
-        }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
 
-        header h1 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
+    header p {
+      margin: 5px 0 0;
+      color: #8fa3b8;
+      font-size: 13px;
+    }
 
-        /* Chat Area */
-        #chat-container {
-            flex: 1; /* Pushes the input area to the bottom */
-            overflow-y: auto;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            scroll-behavior: smooth;
-        }
+    #chat-container {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
 
-        .message {
-            max-width: 80%;
-            padding: 12px 16px;
-            border-radius: var(--border-radius);
-            font-size: 0.95rem;
-            line-height: 1.4;
-            word-wrap: break-word;
-            animation: fadeIn 0.2s ease-out;
-        }
+    .message {
+      max-width: 85%;
+      padding: 12px 15px;
+      border-radius: 15px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
 
-        /* User Message Styling */
-        .message.user {
-            align-self: flex-end; /* Pushes bubble to the right */
-            background-color: var(--user-msg-bg);
-            color: var(--user-msg-text);
-            border-bottom-right-radius: 4px; /* Creates the "tail" */
-        }
+    .user {
+      align-self: flex-end;
+      background: #2563eb;
+    }
 
-        /* AI Message Styling */
-        .message.ai {
-            align-self: flex-start; /* Pushes bubble to the left */
-            background-color: var(--ai-msg-bg);
-            color: var(--ai-msg-text);
-            border-bottom-left-radius: 4px; /* Creates the "tail" */
-        }
+    .ai {
+      align-self: flex-start;
+      background: #18212b;
+      border: 1px solid #293745;
+    }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(8px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+    #composer {
+      display: flex;
+      gap: 10px;
+      padding: 15px;
+      background: #111821;
+      border-top: 1px solid #26313d;
+    }
 
-        /* Input Area */
-        #input-area {
-            background-color: var(--surface-color);
-            padding: 12px 16px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding-bottom: env(safe-area-inset-bottom, 16px);
-        }
+    #user-input {
+      flex: 1;
+      padding: 13px;
+      border-radius: 12px;
+      border: 1px solid #344352;
+      background: #0b0f14;
+      color: white;
+      outline: none;
+      font-size: 15px;
+    }
 
-        #user-input {
-            flex: 1;
-            background-color: var(--input-bg);
-            border: none;
-            color: var(--text-primary);
-            padding: 12px 16px;
-            border-radius: 24px;
-            font-size: 1rem;
-            outline: none;
-            transition: box-shadow 0.2s;
-        }
+    #send-btn {
+      border: none;
+      border-radius: 12px;
+      padding: 0 20px;
+      background: #2563eb;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-        #user-input:focus {
-            box-shadow: 0 0 0 2px var(--accent-color);
-        }
+    #send-btn:disabled {
+      opacity: 0.5;
+    }
 
-        #send-btn {
-            background-color: var(--accent-color);
-            border: none;
-            color: white;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: transform 0.1s, background-color 0.2s;
-        }
-
-        #send-btn:active {
-            transform: scale(0.95);
-            background-color: #0056b3;
-        }
-
-        .send-icon {
-            width: 20px;
-            height: 20px;
-            fill: currentColor;
-            transform: translateX(2px); /* Optically centers the paper plane */
-        }
-    </style>
+    .status {
+      text-align: center;
+      color: #718096;
+      font-size: 12px;
+      padding: 5px;
+    }
+  </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Mari AI</h1>
-    </header>
+  <header>
+    <h1>◇ Mari AI</h1>
+    <p>Your AI companion</p>
+  </header>
 
-    <div id="chat-container">
-        <div class="message ai">System initialized. How can I assist you today?</div>
-    </div>
+  <div id="chat-container">
+    <div class="message ai">Hello. I'm Mari. How can I help you?</div>
+  </div>
 
-    <div id="input-area">
-        <input type="text" id="user-input" placeholder="Message Mari..." autocomplete="off">
-        <button id="send-btn" aria-label="Send">
-            <svg class="send-icon" viewBox="0 0 24 24">
-                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
-            </svg>
-        </button>
-    </div>
+  <div class="status" id="status">Online</div>
 
-    <script>
-        const chatContainer = document.getElementById('chat-container');
-        const userInput = document.getElementById('user-input');
-        const sendBtn = document.getElementById('send-btn');
+  <div id="composer">
+    <input
+      id="user-input"
+      type="text"
+      placeholder="Message Mari..."
+      autocomplete="off"
+    >
+    <button id="send-btn">Send</button>
+  </div>
 
-        function addMessage(text, sender) {
-            if (!text.trim()) return;
-            
-            const msgDiv = document.createElement('div');
-            msgDiv.classList.add('message', sender);
-            msgDiv.textContent = text;
-            chatContainer.appendChild(msgDiv);
-            
-            // Forces the container to scroll to the newest message
-            chatContainer.scrollTop = chatContainer.scrollHeight;
+  <script>
+    const API_BASE = "https://mari-ai-studio-1.onrender.com";
+
+    const chatContainer = document.getElementById("chat-container");
+    const userInput = document.getElementById("user-input");
+    const sendBtn = document.getElementById("send-btn");
+    const status = document.getElementById("status");
+
+    let chatId = crypto.randomUUID();
+
+    function addMessage(text, sender) {
+      const msgDiv = document.createElement("div");
+      msgDiv.classList.add("message", sender);
+      msgDiv.textContent = text;
+
+      chatContainer.appendChild(msgDiv);
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+
+      return msgDiv;
+    }
+
+    async function handleSend() {
+      const text = userInput.value.trim();
+
+      if (!text || sendBtn.disabled) return;
+
+      addMessage(text, "user");
+
+      userInput.value = "";
+      sendBtn.disabled = true;
+      status.textContent = "Mari is thinking...";
+
+      const aiMessage = addMessage("", "ai");
+
+      try {
+        const response = await fetch(
+          `${API_BASE}/api/chat/stream`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              prompt: text,
+              chatId: chatId
+            })
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error(`Server error: ${response.status}`);
         }
 
-        function handleSend() {
-            const text = userInput.value;
-            if (text.trim()) {
-                addMessage(text, 'user');
-                userInput.value = '';
-                
-                // Simulate an AI response for layout testing
-                setTimeout(() => {
-                    addMessage("This is a simulated response. Connect me to your routing logic!", 'ai');
-                }, 600);
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+
+        let buffer = "";
+
+        while (true) {
+          const { value, done } = await reader.read();
+
+          if (done) break;
+
+          buffer += decoder.decode(value, { stream: true });
+
+          const events = buffer.split("\n\n");
+          buffer = events.pop();
+
+          for (const event of events) {
+            const line = event
+              .split("\n")
+              .find(line => line.startsWith("data: "));
+
+            if (!line) continue;
+
+            try {
+              const data = JSON.parse(line.slice(6));
+
+              if (data.type === "chunk") {
+                aiMessage.textContent += data.text;
+                chatContainer.scrollTop =
+                  chatContainer.scrollHeight;
+              }
+
+              if (data.type === "done" && data.chatId) {
+                chatId = data.chatId;
+              }
+
+              if (data.type === "error") {
+                throw new Error(data.error || "Mari encountered an error.");
+              }
+
+            } catch (error) {
+              console.error("Stream event error:", error);
             }
+          }
         }
 
-        sendBtn.addEventListener('click', handleSend);
-        userInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') handleSend();
-        });
-    </script>
+        status.textContent = "Online";
+
+      } catch (error) {
+        console.error(error);
+
+        aiMessage.textContent =
+          "Sorry, I couldn't connect to Mari's AI server.";
+
+        status.textContent = "Connection error";
+      }
+
+      sendBtn.disabled = false;
+      userInput.focus();
+    }
+
+    sendBtn.addEventListener("click", handleSend);
+
+    userInput.addEventListener("keydown", event => {
+      if (event.key === "Enter") {
+        handleSend();
+      }
+    });
+  </script>
+
 </body>
 </html>
