@@ -1,0 +1,114 @@
+[
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "hello, who did i say i am?"
+      }
+    ]
+  },
+  {
+    "role": "model",
+    "parts": [
+      {
+        "text": "Hello! Since we just started this conversation, you haven't told me who you are yet. \n\nWhat is your name, or how would you like me to address you?"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "hey"
+      }
+    ]
+  },
+  {
+    "role": "model",
+    "parts": [
+      {
+        "text": "Hey there! How's it going? What can I do for you today?"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "I'm richmond"
+      }
+    ]
+  },
+  {
+    "role": "model",
+    "parts": [
+      {
+        "text": "Nice to meet you, Richmond! Now I've got your name down. \n\nHow can I help you today?"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "what did i say my name is "
+      }
+    ]
+  },
+  {
+    "role": "model",
+    "parts": [
+      {
+        "text": "You said your name is Richmond! Nice to have you here."
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "Reply with exactly: Mari is online"
+      }
+    ]
+  },
+  {
+    "role": "model",
+    "parts": [
+      {
+        "text": "Mari is online"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "Hello"
+      }
+    ]
+  },
+  {
+    "role": "model",
+    "parts": [
+      {
+        "text": "Hello Richmond! How are you doing today?"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "Good who are you"
+      }
+    ]
+  },
+  {
+    "role": "model",
+    "parts": [
+      {
+        "text": "I'm an AI, a large language model trained by Google. I'm here to chat, answer questions, help you brainstorm, or assist with whatever you might need. \n\nHow can I help you out today, Richmond?"
+      }
+    ]
+  }
+]

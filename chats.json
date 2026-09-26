@@ -1,0 +1,593 @@
+[
+  {
+    "id": "1790262713813",
+    "title": "New Chat",
+    "messages": [],
+    "createdAt": "2026-09-24T15:11:53.813Z",
+    "updatedAt": "2026-09-24T15:11:53.813Z"
+  },
+  {
+    "id": "1790261611206",
+    "title": "New Chat",
+    "messages": [],
+    "createdAt": "2026-09-24T14:53:31.206Z",
+    "updatedAt": "2026-09-24T14:53:31.206Z"
+  },
+  {
+    "id": "1790261277484",
+    "title": "New Chat",
+    "messages": [],
+    "createdAt": "2026-09-24T14:47:57.485Z",
+    "updatedAt": "2026-09-24T14:47:57.485Z"
+  },
+  {
+    "id": "1790261264474",
+    "title": "New Chat",
+    "messages": [],
+    "createdAt": "2026-09-24T14:47:44.474Z",
+    "updatedAt": "2026-09-24T14:47:44.474Z"
+  },
+  {
+    "id": "1790261255915",
+    "title": "New Chat",
+    "messages": [],
+    "createdAt": "2026-09-24T14:47:35.915Z",
+    "updatedAt": "2026-09-24T14:47:35.915Z"
+  },
+  {
+    "id": "608524e8-fb2b-4d11-9bdb-e5f25e80f384",
+    "title": "Hello mari",
+    "createdAt": "2026-09-23T19:11:17.544Z",
+    "updatedAt": "2026-09-23T19:26:40.398Z",
+    "messages": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Hello mari"
+          }
+        ],
+        "createdAt": "2026-09-23T19:11:17.974Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Hey"
+          }
+        ],
+        "createdAt": "2026-09-23T19:24:28.211Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "Hello! How can I help you today?"
+          }
+        ],
+        "createdAt": "2026-09-23T19:24:29.897Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "What's css"
+          }
+        ],
+        "createdAt": "2026-09-23T19:26:37.384Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "**CSS** stands for **Cascading Style Sheets**. \n\nIf HTML is the skeleton and structure of a website, CSS is the style, clothing, and makeup. It's the programming language used to describe how HTML elements should be displayed on screen, paper, or in other media.\n\nHere is what CSS allows you to do:\n* **Design and Layout:** Control colors, fonts, spacing, margins, and the positioning of elements.\n* **Responsiveness:** Make websites look great on all devices—from giant desktop monitors to tiny smartphone screens (using tools like media queries).\n* **Animations and Effects:** Add smooth transitions, hover effects, and moving graphics without needing heavy JavaScript.\n\n### How it works:\nCSS works by selecting HTML elements and applying \"rules\" to them. For example, if you want all the headings on your website to be blue and use a specific font, you would write a CSS rule like this:\n\n```css\nh1 {\n  color: blue;\n  font-family: 'Arial', sans-serif;\n}\n```\n\nWould you like to see a quick example of how to add CSS to a webpage, or are you looking to style a specific project?"
+          }
+        ],
+        "createdAt": "2026-09-23T19:26:40.398Z"
+      }
+    ]
+  },
+  {
+    "id": "e7d02fac-33e6-4609-a33e-c7258d5c65ee",
+    "title": "What's 2*3",
+    "createdAt": "2026-09-23T19:22:42.488Z",
+    "updatedAt": "2026-09-23T19:38:50.426Z",
+    "messages": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "What's 2*3"
+          }
+        ],
+        "createdAt": "2026-09-23T19:22:52.255Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "2 * 3 = 6"
+          }
+        ],
+        "createdAt": "2026-09-23T19:22:59.194Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "What's html"
+          }
+        ],
+        "createdAt": "2026-09-23T19:23:06.178Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "**HTML** stands for **HyperText Markup Language**. It is the standard programming language used to create and structure pages on the web. \n\nThink of HTML as the skeleton or blueprint of a website. Here is a quick breakdown of what it does:\n\n* **Structure:** It tells the web browser how to display content by using \"tags\" (like headings, paragraphs, lists, links, and images). \n* **HyperText:** It allows text to have hyperlinks, meaning you can click on a word or image and jump to another page or website.\n* **Markup:** It uses special codes (markup) to label different parts of a document so the browser knows whether something is a title, a paragraph, a table, etc.\n\nHTML is rarely used all by itself nowadays. It usually works alongside two other languages to make a complete website:\n1. **HTML** for the structure/content.\n2. **CSS** (Cascading Style Sheets) for the design, colors, and layout.\n3. **JavaScript** for interactivity (like pop-ups, animations, and dynamic content). \n\nWould you like to see a simple example of what HTML code looks like?"
+          }
+        ],
+        "createdAt": "2026-09-23T19:23:10.019Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Can u write codes"
+          }
+        ],
+        "createdAt": "2026-09-23T19:37:37.499Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "Yes, absolutely! I can write code in many different programming languages, such as Python, JavaScript, HTML/CSS, C++, Java, SQL, and many others. \n\nWhether you need help building something from scratch, debugging an error, or learning a new concept, just let me know what you're working on and how I can help! What kind of code do you need?"
+          }
+        ],
+        "createdAt": "2026-09-23T19:37:39.240Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Write a simple game code using html css and js"
+          }
+        ],
+        "createdAt": "2026-09-23T19:38:09.767Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "Here is a fun and simple **Guess the Number** game! It uses HTML for the structure, CSS for the styling, and JavaScript for the game logic.\n\nYou can save all of this code into a single file named `game.html` and open it right in your web browser.\n\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Guess the Number Game</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            background: linear-gradient(135deg, #74b9ff, #0984e3);\n            color: white;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            height: 100vh;\n            margin: 0;\n        }\n        .game-container {\n            background: rgba(255, 255, 255, 0.1);\n            padding: 30px;\n            border-radius: 15px;\n            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);\n            text-align: center;\n            width: 300px;\n        }\n        input {\n            padding: 10px;\n            font-size: 16px;\n            width: 80%;\n            margin-bottom: 15px;\n            border: none;\n            border-radius: 5px;\n            text-align: center;\n        }\n        button {\n            padding: 10px 20px;\n            font-size: 16px;\n            background-color: #00b894;\n            color: white;\n            border: none;\n            border-radius: 5px;\n            cursor: pointer;\n        }\n        button:hover {\n            background-color: #00cec9;\n        }\n        #message {\n            margin-top: 20px;\n            font-weight: bold;\n            font-size: 18px;\n        }\n    </style>\n</head>\n<body>\n\n    <div class=\"game-container\">\n        <h2>Guess the Number!</h2>\n        <p>Guess a number between 1 and 50</p>\n        <input type=\"number\" id=\"userGuess\" min=\"1\" max=\"50\">\n        <br>\n        <button onclick=\"checkGuess()\">Submit Guess</button>\n        <p id=\"message\"></p>\n    </div>\n\n    <script>\n        // Generate a random number between 1 and 50\n        let secretNumber = Math.floor(Math.random() * 50) + 1;\n        let attempts = 0;\n\n        function checkGuess() {\n            const guess = Number(document.getElementById('userGuess').value);\n            const message = document.getElementById('message');\n            \n            if (!guess || guess < 1 || guess > 50) {\n                message.style.color = \"#ff7675\";\n                message.textContent = \"Please enter a valid number between 1 and 50!\";\n                return;\n            }\n\n            attempts++;\n\n            if (guess === secretNumber) {\n                message.style.color = \"#55efc4\";\n                message.textContent = `🎉 Correct! You found it in ${attempts} attempts!`;\n            } else if (guess < secretNumber) {\n                message.style.color = \"#ffeaa7\";\n                message.textContent = \"📈 Too low! Try a higher number.\";\n            } else {\n                message.style.color = \"#ffeaa7\";\n                message.textContent = \"📉 Too high! Try a lower number.\";\n            }\n        }\n    </script>\n\n</body>\n</html>\n```\n\n### How to run it:\n1. Copy the code above.\n2. Open a text editor (like Notepad on Windows or TextEdit on Mac).\n3. Paste the code and save the file as `game.html`.\n4. Double-click the saved file to open it in any web browser! \n\nLet me know if you'd like me to explain how any part of it works or if you want to add more features to it!"
+          }
+        ],
+        "createdAt": "2026-09-23T19:38:14.172Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "How can I copy"
+          }
+        ],
+        "createdAt": "2026-09-23T19:38:50.426Z"
+      }
+    ]
+  },
+  {
+    "id": "7c1eaf2e-252f-4f61-9736-2e63d11d0e7c",
+    "title": "Tell me your abilities",
+    "createdAt": "2026-09-23T19:23:12.393Z",
+    "updatedAt": "2026-09-23T19:23:28.176Z",
+    "messages": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Tell me your abilities"
+          }
+        ],
+        "createdAt": "2026-09-23T19:23:25.858Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "Hi! I'm Mari, your personal AI assistant here in Mari AI Studio. \n\nI'm designed to help you with a wide range of tasks to make your work and everyday life easier. Here is a look at what I can do:\n\n* **Programming & Development:** Writing, debugging, explaining, and optimizing code across many different languages and frameworks.\n* **Writing & Content Creation:** Drafting emails, essays, stories, reports, and creative content, as well as editing and proofreading your work.\n* **Learning & Research:** Explaining complex concepts, summarizing long texts, answering questions, and helping you study new topics.\n* **Problem Solving & Planning:** Brainstorming ideas, organizing projects, creating itineraries, and working through logical puzzles or strategic challenges.\n* **Everyday Productivity:** Helping you stay organized, managing lists, and working through daily administrative or creative tasks.\n\nThink of me as your all-around partner for whatever you're working on. How can I help you today?"
+          }
+        ],
+        "createdAt": "2026-09-23T19:23:28.176Z"
+      }
+    ]
+  },
+  {
+    "id": "da772810-5b51-4e90-a927-3043fe2be0d4",
+    "title": "What's html",
+    "createdAt": "2026-09-23T19:35:09.777Z",
+    "updatedAt": "2026-09-23T19:36:48.685Z",
+    "messages": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "What's html"
+          }
+        ],
+        "createdAt": "2026-09-23T19:35:10.304Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "HTML stands for **HyperText Markup Language**. It is the standard programming language used to create and structure web pages on the internet. \n\nThink of HTML as the **skeleton** of a website:\n* **HyperText** means that pages can be linked together using hyperlinks (the clickable links that take you from one page to another).\n* **Markup Language** means you use \"tags\" to tell a web browser how to display text, images, forms, and other elements on a screen.\n\n### A Simple Example:\nIf you want to create a heading and a paragraph in HTML, it looks like this:\n\n```html\n<h1>Welcome to My Website</h1>\n<p>This is a paragraph explaining what my site is about.</p>\n```\n\n* `<h1>` is a tag that tells the browser, \"Make this a big heading.\"\n* `<p>` tells the browser, \"This is a block of text.\"\n\nWhile HTML handles the structure, it is usually paired with **CSS** (which handles the styling, colors, and layout) and **JavaScript** (which adds interactivity, like pop-ups or animations) to make a complete website. \n\nAre you looking to learn how to write HTML, or did you have a specific project in mind?"
+          }
+        ],
+        "createdAt": "2026-09-23T19:35:13.934Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Are u capable of writing codes"
+          }
+        ],
+        "createdAt": "2026-09-23T19:36:48.685Z"
+      }
+    ]
+  },
+  {
+    "id": "722a4275-6343-48a5-bfd5-fb2a308063fa",
+    "title": "Explain HTML and give me 3 examples.",
+    "createdAt": "2026-09-23T19:37:20.496Z",
+    "updatedAt": "2026-09-24T04:12:55.944Z",
+    "messages": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Explain HTML and give me 3 examples."
+          }
+        ],
+        "createdAt": "2026-09-24T04:12:55.944Z"
+      }
+    ]
+  },
+  {
+    "id": "14507b9b-c9b8-4d72-80f1-ab74a3de4800",
+    "title": "Explain HTML and give me 3 examples.",
+    "createdAt": "2026-09-24T04:12:18.475Z",
+    "updatedAt": "2026-09-24T04:24:15.195Z",
+    "messages": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Explain HTML and give me 3 examples."
+          }
+        ],
+        "createdAt": "2026-09-24T04:12:19.110Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Explain HTML in 3 bullet points."
+          }
+        ],
+        "createdAt": "2026-09-24T04:24:05.931Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Hey"
+          }
+        ],
+        "createdAt": "2026-09-24T04:24:15.195Z"
+      }
+    ]
+  },
+  {
+    "id": "e907d2c3-2c07-4d24-9666-207594fb2668",
+    "title": "Hello mari",
+    "createdAt": "2026-09-24T04:33:25.106Z",
+    "updatedAt": "2026-09-24T04:42:10.525Z",
+    "messages": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Hello mari"
+          }
+        ],
+        "createdAt": "2026-09-24T04:33:36.829Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "Hello! How can I help you in Mari AI Studio today?"
+          }
+        ],
+        "createdAt": "2026-09-24T04:33:38.694Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Explain html"
+          }
+        ],
+        "createdAt": "2026-09-24T04:33:47.919Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "**HTML** (HyperText Markup Language) is the standard language used to create and structure web pages. It tells the web browser how to display text, images, links, and other content.\n\n### Key Concepts\n\n* **Tags:** HTML uses \"tags\" enclosed in angle brackets (like `<p>` or `<h1>`) to wrap content and define its purpose. Most tags come in pairs: an **opening tag** and a **closing tag** (e.g., `<h1>Heading</h1>`).\n* **Elements:** An element consists of the opening tag, the content, and the closing tag.\n* **Attributes:** Tags can have attributes that provide extra information about an element (like a link's destination: `<a href=\"https://example.com\">`).\n\n---\n\n### Basic Example\n\n```html\n<!DOCTYPE html>\n<html>\n  <head>\n    <title>My First Web Page</title>\n  </head>\n  <body>\n    <h1>Hello, World!</h1>\n    <p>This is a paragraph of text on my webpage.</p>\n    <a href=\"https://example.com\">Click this link</a>\n  </body>\n</html>\n```\n\n### How the Parts Work:\n1. `<!DOCTYPE html>`: Tells the browser this is a modern HTML5 document.\n2. `<html>`: The root element that wraps all the content on the page.\n3. `<head>`: Contains background info like the page title and style sheets (not visible on the page itself).\n4. `<body>`: Contains all the visible content (text, images, buttons)."
+          }
+        ],
+        "createdAt": "2026-09-24T04:33:50.702Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Can u generate pictures"
+          }
+        ],
+        "createdAt": "2026-09-24T04:34:04.285Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "No, I cannot directly generate or display images here, as I am a text-based AI assistant. \n\nHowever, I can help you with:\n* Writing prompts for image generators (like DALL-E, Midjourney, or Stable Diffusion).\n* Writing HTML code to display images on a webpage (`<img>` tags).\n* Creating SVG (Scalable Vector Graphics) code, which browsers can render as simple shapes and graphics. \n\nLet me know if you'd like help with any of those!"
+          }
+        ],
+        "createdAt": "2026-09-24T04:34:06.428Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "I have a girlfriend she maridiya"
+          }
+        ],
+        "createdAt": "2026-09-24T04:41:32.393Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "Congratulations! Or... wait, is \"maridiya\" a typo for \"married\" (as in she got married to someone else), or did you mean something else? \n\nTell me a bit more about what's going on!"
+          }
+        ],
+        "createdAt": "2026-09-24T04:41:35.656Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "No that's her name"
+          }
+        ],
+        "createdAt": "2026-09-24T04:41:53.583Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "Ah, my apologies! Maridiya is a really unique and beautiful name. \n\nHow are things going with you and Maridiya?"
+          }
+        ],
+        "createdAt": "2026-09-24T04:41:55.441Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Pretty well"
+          }
+        ],
+        "createdAt": "2026-09-24T04:42:08.244Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "That's great to hear! It's always wonderful when things are going smoothly. \n\nIs there anything specific you'd like to chat about today, or any way I can help you out?"
+          }
+        ],
+        "createdAt": "2026-09-24T04:42:10.525Z"
+      }
+    ]
+  },
+  {
+    "id": "3d0078b0-5f21-4c22-a66c-4ee787adde04",
+    "title": "Hey, what did I say my girlfriend's...",
+    "createdAt": "2026-09-24T04:42:12.766Z",
+    "updatedAt": "2026-09-24T04:42:36.740Z",
+    "messages": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Hey, what did I say my girlfriend's name was"
+          }
+        ],
+        "createdAt": "2026-09-24T04:42:35.084Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "I don't have access to our past conversations, so you haven't mentioned her name to me yet! What is her name?"
+          }
+        ],
+        "createdAt": "2026-09-24T04:42:36.740Z"
+      }
+    ]
+  },
+  {
+    "id": "7f725460-5333-4552-a63d-0d4cf32f3f91",
+    "title": "New Chat",
+    "createdAt": "2026-09-24T14:29:01.512Z",
+    "updatedAt": "2026-09-24T14:29:01.512Z",
+    "messages": []
+  },
+  {
+    "id": "b36c1e2e-7889-413c-932c-5269026b0c5f",
+    "title": "New Chat",
+    "createdAt": "2026-09-24T14:33:18.256Z",
+    "updatedAt": "2026-09-24T14:33:18.257Z",
+    "messages": []
+  },
+  {
+    "id": "fb2bfc3c-185e-4b63-8e33-c8b49bd5a89e",
+    "title": "New Chat",
+    "createdAt": "2026-09-24T14:38:50.562Z",
+    "updatedAt": "2026-09-24T14:38:50.562Z",
+    "messages": []
+  },
+  {
+    "id": "5ae227cb-69a0-4425-831a-57f09cd6a3ef",
+    "title": "New chat",
+    "messages": [],
+    "createdAt": "2026-09-24T15:21:36.244Z",
+    "updatedAt": "2026-09-24T15:21:36.244Z"
+  },
+  {
+    "id": "7c65ee6a-f0f5-4434-8ded-8beb448b81d0",
+    "title": "New chat",
+    "messages": [],
+    "createdAt": "2026-09-24T15:21:41.004Z",
+    "updatedAt": "2026-09-24T15:21:41.004Z"
+  },
+  {
+    "id": "d4a8179f-4029-4ec3-a846-f66e7fb15857",
+    "title": "Hello mari",
+    "createdAt": "2026-09-25T14:17:12.623Z",
+    "updatedAt": "2026-09-25T14:18:44.110Z",
+    "messages": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Hello mari"
+          }
+        ],
+        "createdAt": "2026-09-25T14:17:41.256Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "Hello! How can I help you in Mari AI Studio today?"
+          }
+        ],
+        "createdAt": "2026-09-25T14:17:47.848Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "What's your name"
+          }
+        ],
+        "createdAt": "2026-09-25T14:18:10.101Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "My name is Mari. I'm your personal AI assistant here in Mari AI Studio! How can I help you today?"
+          }
+        ],
+        "createdAt": "2026-09-25T14:18:44.110Z"
+      }
+    ]
+  },
+  {
+    "id": "fd1867a7-2b0c-4394-904c-6e67674b14ff",
+    "title": "Hey",
+    "createdAt": "2026-09-25T16:58:42.386Z",
+    "updatedAt": "2026-09-25T17:00:16.996Z",
+    "messages": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Hey"
+          }
+        ],
+        "createdAt": "2026-09-25T16:58:47.077Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "Hey there! How can I help you in Mari AI Studio today?"
+          }
+        ],
+        "createdAt": "2026-09-25T16:58:50.093Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "What's html"
+          }
+        ],
+        "createdAt": "2026-09-25T16:58:58.049Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "**HTML** stands for **HyperText Markup Language**. It is the standard programming language used to create and structure pages on the web. \n\nThink of HTML as the **skeleton** of a website:\n* It defines what content is on the page (like text, images, videos, and buttons).\n* It organizes that content using \"tags\" (e.g., headings, paragraphs, lists).\n\n### A Simple Example\n```html\n<!DOCTYPE html>\n<html>\n  <head>\n    <title>My First Page</title>\n  </head>\n  <body>\n    <h1>Hello, World!</h1>\n    <p>This is a paragraph of text on a web page.</p>\n  </body>\n</html>\n```\n\n*Note: While HTML provides the structure, it is usually paired with **CSS** (for styling and design) and **JavaScript** (for interactivity) to build complete websites.*"
+          }
+        ],
+        "createdAt": "2026-09-25T16:59:18.164Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "What's social studies"
+          }
+        ],
+        "createdAt": "2026-09-25T16:59:52.923Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "**Social studies** is an academic subject taught in schools that combines the study of human society, relationships, and behavior. \n\nIt draws from several different disciplines to help students understand how the world works and how people interact within it. Its core subjects include:\n\n*   **History:** Studying past events, societies, and how we got to where we are today.\n*   **Geography:** Studying the Earth's landscapes, environments, and how humans interact with locations.\n*   **Civics and Government:** Learning about laws, rights, how governments operate, and what it means to be an active citizen.\n*   **Economics:** Understanding how societies produce, distribute, and consume goods and services (money, trade, jobs).\n*   **Culture and Sociology:** Exploring human cultures, beliefs, traditions, and social structures.\n\nUltimately, social studies aims to help people become informed, responsible, and engaged citizens in a diverse world."
+          }
+        ],
+        "createdAt": "2026-09-25T16:59:55.067Z"
+      },
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "What's your name"
+          }
+        ],
+        "createdAt": "2026-09-25T17:00:15.441Z"
+      },
+      {
+        "role": "model",
+        "parts": [
+          {
+            "text": "I'm Mari, your personal AI assistant here in Mari AI Studio. How can I help you today?"
+          }
+        ],
+        "createdAt": "2026-09-25T17:00:16.996Z"
+      }
+    ]
+  }
+]
