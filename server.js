@@ -142,7 +142,8 @@ app.get('/api/health', (req, res) => {
     status: 'online',
     service: 'Mari AI',
     model: PRIMARY_MODEL,
-    streaming: true
+    streaming: true,
+    geminiKeyConfigured: Boolean(process.env.GEMINI_API_KEY)
   });
 });
 
