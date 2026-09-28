@@ -15,7 +15,7 @@ const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY
 });
 
-const PRIMARY_MODEL = 'gemini-3.5-flash-lite';
+const PRIMARY_MODEL = 'gemini-2.5-flash';
 
 const HISTORY_FILE = path.resolve('history.json');
 const MEMORY_FILE = path.resolve('memory.json');
